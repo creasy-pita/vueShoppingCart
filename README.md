@@ -4,6 +4,8 @@
 
 #### 通过添加的插件 EndWebpackplugin 的 注册方法到 shouldemit钩子函数  来访问 htmlwebpackplugin  修改template 属性（及模板路径） 后并没有改变 lib  方式build的 模板路径即还是原来的 \node_modules\@vue\cli-service\lib\commands\build\demo-lib-js.html
 
+#### vue.config.js 中在加入一个新的htmlwepackplugin， 用新的模板输出新的demo.html 达到预期的效果
+
 
 ### 2020年1月7日
 
