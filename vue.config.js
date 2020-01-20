@@ -11,7 +11,10 @@ module.exports = {
           new HtmlWebpackPlugin( {
             title: 'My App',
             template: 'src/template/demo.html',
-            filename:'test.html'
+            filename:'test.html',
+            inject: false,
+            libName: 'gisqshoppingcart',
+            assetsFileName: 'gisqshoppingcart',  //此名称需要时filename ,还需要再再琢磨          
           }),
         //   new EndWebpackPlugin(compilation => {
         //     //console.info('after webpack all done',compilation)
