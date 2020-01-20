@@ -1,6 +1,11 @@
 # myshoppingcart
 
-2020年1月7日
+### 2020年1月20日
+
+#### 通过添加的插件 EndWebpackplugin 的 注册方法到 shouldemit钩子函数  来访问 htmlwebpackplugin  修改template 属性（及模板路径） 后并没有改变 lib  方式build的 模板路径即还是原来的 \node_modules\@vue\cli-service\lib\commands\build\demo-lib-js.html
+
+
+### 2020年1月7日
 
 #### vue 实现 shoppingcart 组件的练习
 #### 用于熟悉vue2,vue3 -cli 创建project 的过程和 默认产生的工程文件结构

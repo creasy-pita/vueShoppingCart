@@ -1,13 +1,14 @@
 {
   "name": "gisqshoppingcart",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "private": false,
   "main": "lib/gisqshoppingcart.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name gisqshoppingcart --dest lib src/components/index.js",
-    "preview": "cross-env webpack_config=preview vue-cli-service build --target lib  --name gisqshoppingcart --dest lib src/components/index.js",
+    "build:preview": "cross-env webpack_config=preview vue-cli-service build",
+    "build:wc": "vue-cli-service build --target wc --inline-vue  --name gisq-shoppingcart --dest wc src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

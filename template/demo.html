@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<title><%- htmlWebpackPlugin.options.libName %> demo</title>
+<script src="./<%- htmlWebpackPlugin.options.assetsFileName %>.umd.js"></script>
+<% if (htmlWebpackPlugin.options.cssExtract) { %>
+<link rel="stylesheet" href="./<%- htmlWebpackPlugin.options.assetsFileName %>.css">
+<% } %>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <<%- htmlWebpackPlugin.options.libName %>></<%- htmlWebpackPlugin.options.libName %>>
+  </div>
+<div>another demo</div>
+  <script>
+  new Vue({
+  render: h => h(<%- htmlWebpackPlugin.options.libName %>.default),
+}).$mount('#app')     
+  </script>

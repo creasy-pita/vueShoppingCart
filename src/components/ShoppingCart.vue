@@ -7,10 +7,11 @@
                 <th>商品单价</th>
                 <th>商品数量</th>
                 <th>操作</th>
+                <th>备注</th>
             </tr>
         </thead> 
         <tbody>
-            <tr v-for="(item,index) in list" :key="item">
+            <tr v-for="(item,index) in list" :key="index">
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.price}}</td>
@@ -19,14 +20,23 @@
                     <button @click="handleReduce(index)" :disabled="item.count===0">-</button>
                     <button @click="handleAdd(index)" >+</button>
                     <button @click="handleRemove(index)" >移除</button>
+                    <img src="../assets/logo.png">
                 </td>
+                <td><hell :msg="msg"></hell></td>
             </tr>
         </tbody>               
-    </table>
+    </table> 
 </template>
 <script >
+import hell from './HelloWorld'
+
 export default({
     name:'shoppingchart',
+    props:{
+        msg:String
+    },
+    components:
+    {hell},
     data:function(){
         return {list:[
             {

@@ -4,7 +4,14 @@
 
 <link rel="stylesheet" href="./gisqshoppingcart.css">
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<script>
-console.log(gisqshoppingcart)
-</script>
+<div id="app">
+    <gisqshoppingcart></gisqshoppingcart>
+  </div>
+<div>end1</div>
+  <script>
+  new Vue({
+  render: h => h(gisqshoppingcart.default),
+}).$mount('#app')     
+  </script>

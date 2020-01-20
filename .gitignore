@@ -19,3 +19,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+# root  zip
+*.zip
+
+!node_modules\@vue\cli-service\lib\commands
